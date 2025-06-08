@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Information Visualization 571 - Kirtan Patel</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e8f1f9;
+    }
+    header {
+      background-color: #0073e6;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    .container {
+      background-color: #ffffff;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      border-radius: 10px;
+    }
+    h2 {
+      color: #0073e6;
+      margin-top: 40px;
+    }
+    .justification {
+      background-color: #d9ecff;
+      border-left: 6px solid #0073e6;
+      padding: 15px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+    .description {
+      background-color: #f0fff0;
+      border-left: 6px solid #28a745;
+      padding: 15px;
+      margin-bottom: 30px;
+      font-size: 16px;
+      border-radius: 6px;
+    }
+    .tableauPlaceholder {
+      margin-bottom: 30px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+      background-color: #e8f1f9;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Information Visualization 571</h1>
+  <p style="font-size: 20px; font-weight: bold;">Kirtan Patel – 1033001</p>
+</header>
+
+
+<div class="nav-container" style="background: linear-gradient(to right, #6a11cb, #2575fc); padding: 20px; border-radius: 20px; width: 90%; max-width: 1000px; margin: 30px auto; text-align: center;">
+  <div style="color: white; font-size: 20px; margin-bottom: 15px;">Navigation</div>
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;">
+    <a href="#grocery" style="background-color: #ffffff; color: #4a4a4a; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: bold;">Grocery</a>
+    <a href="#films" style="background-color: #ffffff; color: #4a4a4a; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: bold;">Films</a>
+    <a href="#cereals" style="background-color: #ffffff; color: #4a4a4a; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: bold;">Cereals</a>
+    <a href="#cars" style="background-color: #ffffff; color: #4a4a4a; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: bold;">Cars</a>
+    <a href="#mutual" style="background-color: #ffffff; color: #4a4a4a; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: bold;">Mutual Funds</a>
+  </div>
+</div>
+
+<div class="container" id="grocery">
+  <div class="description">
+    This webpage presents five Tableau dashboards built from different datasets. Each visualization type has been carefully selected based on the nature of the data to highlight patterns, make comparisons, and deliver meaningful insights. Each chart is paired with a detailed explanation to describe its purpose and effectiveness.
+  </div>
+
+  <h2>1. Grocery Stores Dashboard</h2>
+  <div class="justification">
+    This stacked bar chart presents the total purchase amounts by grocery chain, segmented by payment method. It clearly shows which chains are generating the highest sales and how those sales are distributed across payment types like credit, debit, and cash. This makes it easier to understand both store performance and customer purchasing preferences. "Major A" and "Other" appear to dominate the revenue distribution, indicating their larger market presence.
+  </div>
+  <div class='tableauPlaceholder' id='viz1' style='width: 100%; height: 600px;'></div>
+
+  <div id="films"></div><h2>2. Films Dashboard</h2>
+  <div class="justification">
+    This scatter-style dot plot shows movie popularity grouped by genre. Each colored dot represents a film, and the layout allows quick comparison within and across genres. The chart reveals that genres like Action and Drama have a higher density of popular movies, providing insight into viewer preferences. This visualization is particularly effective because it gives a genre-wise breakdown and makes it easy to spot which genres have more hits.
+  </div>
+  <div class='tableauPlaceholder' id='viz2' style='width: 100%; height: 600px;'></div>
+
+  <div id="cereals"></div><h2>3. Cereals Dashboard</h2>
+  <div class="justification">
+    The horizontal bar chart compares different cereals based on two nutritional attributes: fiber and sugar content. This side-by-side comparison makes it easy to identify which cereals are healthier or more sugary. For instance, “All-Bran with Extra Fiber” shows extremely high fiber content, which may appeal to health-conscious consumers. The chart helps users make dietary decisions quickly and effectively.
+  </div>
+  <div class='tableauPlaceholder' id='viz3' style='width: 100%; height: 600px;'></div>
+
+  <div id="cars"></div><h2>4. Cars Dashboard</h2>
+  <div class="justification">
+    This line chart shows the average MPG (Miles Per Gallon) trends over the years based on car origin (e.g., American, Japanese, European). The visualization highlights how fuel efficiency has evolved differently in each region. Japanese cars show a consistent and stronger improvement in MPG, which indicates advancements in automotive efficiency. This chart is helpful in understanding long-term regional innovation patterns in the auto industry.
+  </div>
+  <div class='tableauPlaceholder' id='viz4' style='width: 100%; height: 600px;'></div>
+
+  <div id="mutual"></div><h2>5. Mutual Funds Dashboard</h2>
+  <div class="justification">
+    This packed bubble chart illustrates the Year-To-Date (YTD) performance of various mutual fund categories. Each bubble’s size represents its return, and color is used to differentiate fund types. This format offers a visually engaging and space-efficient way to compare investment returns across categories. Notably, "Large Growth" funds are among the top performers. The design enables users to easily identify high-return investment options.
+  </div>
+  <div class='tableauPlaceholder' id='viz5' style='width: 100%; height: 600px;'></div>
+</div>
+
+<footer>
+  Created by: Kirtan Patel – 1033001
+</footer>
+
+<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
+<script type='text/javascript'>
+  const tableauUrls = [
+    "Book1_17492467000780/Sheet1",
+    "Book2_17492467491980/Sheet2",
+    "Book3_17492468074770/Sheet3",
+    "Book4_17492468490380/Sheet4",
+    "Book5_17492468982780/Sheet5"
+  ];
+
+  tableauUrls.forEach((name, index) => {
+    const placeholder = document.getElementById(`viz${index + 1}`);
+    const vizElement = document.createElement("object");
+    vizElement.className = "tableauViz";
+    vizElement.style.width = "100%";
+    vizElement.style.height = "100%";
+
+    [
+      ['host_url', 'https%3A%2F%2Fpublic.tableau.com%2F'],
+      ['embed_code_version', '3'],
+      ['site_root', ''],
+      ['name', name],
+      ['tabs', 'no'],
+      ['toolbar', 'yes'],
+      ['animate_transition', 'yes'],
+      ['display_static_image', 'yes'],
+      ['display_spinner', 'yes'],
+      ['display_overlay', 'yes'],
+      ['display_count', 'yes'],
+      ['language', 'en-US']
+    ].forEach(([key, val]) => {
+      const param = document.createElement("param");
+      param.setAttribute("name", key);
+      param.setAttribute("value", val);
+      vizElement.appendChild(param);
+    });
+
+    placeholder.appendChild(vizElement);
+  });
+</script>
+
+</body>
+</html>
